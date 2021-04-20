@@ -293,7 +293,11 @@ export default function Profile() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="mt-4 text-center"><button id="loadOnClick" className="btn btn-primary shadow-soft border-soft btn-loading-overlay mr-2 mb-2" type="button"><span className="spinner"><span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /> </span><span className="ml-1 btn-inner-text">Show more</span></button>
+                                        <div className="mt-4 text-center">
+                                            <button id="loadOnClick" className="btn btn-primary shadow-soft border-soft btn-loading-overlay mr-2 mb-2" type="button">
+                                                <span className="spinner"><span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /> 
+                                                </span>
+                                                <span className="ml-1 btn-inner-text">Show more</span></button>
                                             <p id="allLoadedText" style={{ display: 'none' }}>That's all, Sparky!</p>
                                         </div>
                                     </div>

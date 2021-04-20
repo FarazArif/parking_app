@@ -43,7 +43,7 @@ export default function Maintenance() {
                 <div className="container py-5">
                     <div className="row align-items-center justify-content-center justify-content-lg-between">
                         <div className="col-12 col-sm-9 col-md-8 col-lg-6 mb-5 mb-lg-0">
-                            {/* <img className="img-fluid" src="https://demo.themesberg.com/spaces/assets/img/illustrations/maintenance.svg" alt="boy illustration" /> */}
+                         <img className="img-fluid" src="https://demo.themesberg.com/spaces/assets/img/illustrations/maintenance.svg" alt="boy illustration" /> 
                         </div>
                         <div className="col-sm-12 col-lg-6">
                             <div className="text-center text-lg-left">

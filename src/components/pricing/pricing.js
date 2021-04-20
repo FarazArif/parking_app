@@ -84,7 +84,9 @@ export default function Pricing() {
                                             <div className="d-flex">
                                                 <div className="icon-md icon-secondary lh-180 mr-3"><span className="fas fa-check-circle" /></div>
                                                 <p>Lorem ipsum Lorem</p>
-                                            </div><button type="button" className="btn btn-outline-primary btn-block mt-4"><span className="fas fa-cart-plus mr-3" />Add to Cart</button>
+                                            </div>
+                                            <button type="button" className="btn btn-outline-primary btn-block mt-4">
+                                               Book Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +131,7 @@ export default function Pricing() {
                                             <div className="d-flex">
                                                 <div className="icon-md icon-secondary lh-180 mr-3"><span className="fas fa-check-circle" /></div>
                                                 <p>Lorem ipsum dolor sit</p>
-                                            </div><button type="button" className="btn btn-outline-primary btn-block mt-4" tabIndex={0}><span className="fas fa-cart-plus mr-3" />Add to Cart</button>
+                                            </div><button type="button" className="btn btn-outline-primary btn-block mt-4" tabIndex={0}>Book Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +172,7 @@ export default function Pricing() {
                                             <div className="d-flex">
                                                 <div className="icon-md icon-secondary lh-180 mr-3"><span className="fas fa-check-circle" /></div>
                                                 <p>Lorem ipsum</p>
-                                            </div><button type="button" className="btn btn-outline-primary btn-block mt-4" tabIndex={0}><span className="fas fa-cart-plus mr-3" />Add to Cart</button>
+                                            </div><button type="button" className="btn btn-outline-primary btn-block mt-4" tabIndex={0}>Book Now</button>
                                         </div>
                                     </div>
                                 </div>

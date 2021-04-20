@@ -139,7 +139,8 @@ export default function Home() {
               <div className="col-12 section_headings">
                 <h3 className="h4 mb-5">Top Bookings</h3>
               </div>
-              <div className="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0"> <a  className="card img-card fh-400 border-0 outer-bg" data-background-inner="../assets/img/newyork.jpg">
+              <div className="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0"> 
+              <a  className="card img-card fh-400 border-0 outer-bg" data-background-inner="../assets/img/newyork.jpg">
                 <div className="inner-bg overlay-dark" />
                 <div className="card-img-overlay d-flex align-items-center">
                   <div className="card-body text-white p-3">
