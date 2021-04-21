@@ -26,7 +26,15 @@ import Comingsoon from "./components/comingsoon/comingsoon"
 import Error404 from "./components/error_404/404"
 import Error500 from "./components/error_500/500"
 import Forget_password from "./components/forgetpassword/forgetpassword"
-
+import Dashboard_Account from "./components/dashboard/account";
+import Dashboard_Settings from "./components/dashboard/setting";
+import Dashboard_Security from "./components/dashboard/security";
+import Dashboard_Messages from "./components/dashboard/messeges";
+import Dashboard_Chat from "./components/dashboard/chat";
+import Dashboard_Billing from "./components/dashboard/billing";
+import Dashboard_Invoice from "./components/dashboard/invoice";
+import Dashboard_MyItem from "./components/dashboard/myItem";
+import Dashboard_EditItem from "./components/dashboard/editItem";
 
 
 
@@ -81,22 +89,25 @@ if(window.location.href=="http://localhost:3000/"){
 }
 
 
-     function updateSize() {
-       let width=window.innerWidth;
-       if(width<="992"){
+    //  function updateSize() {
+    //    let width=window.innerWidth;
+    //    if(width<="992"){
         
-         setWindowDimensions(true)
-        }else{
-          setWindowDimensions(false)
-        }
-      }
-      window.addEventListener('resize', updateSize);
+    //      setWindowDimensions(true)
+    //     }else{
+    //       setWindowDimensions(false)
+    //     }
+    //   }
+    //   window.addEventListener('resize', updateSize);
       window.addEventListener('scroll', changeNavbarColor);
-    updateSize();
+    // updateSize();
 
 
 
-   }, [history]);
+   },
+    // [history]
+    []
+   );
 
   return (
     <BrowserRouter>
@@ -106,7 +117,7 @@ if(window.location.href=="http://localhost:3000/"){
      <header  className="header-global">
         <nav
         
-        style={{backgroundColor:windowlocation}}
+        style={{backgroundColor:"#0d1b48"}}
         id="navbar-main" className="navbar navbar-main navbar-theme-primary navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-transparent navbar-theme-primary">
         {console.log(windowlocation)};
 
@@ -140,14 +151,15 @@ if(window.location.href=="http://localhost:3000/"){
                         <h6 className="d-block mb-3 text-primary">Main pages</h6>
                         <ul className="list-style-none mb-4">
                           <li  className="mb-2 megamenu-item">
-
-                     {windowDimensions ?
+                         <a className="megamenu-link" href="/">
+                           Home
+                     {/* {windowDimensions ?
                           <a  href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
                        
                          
                           <Link onClick={() => {
         
-                                  window.location.href="/";
+                                  // window.location.href="/";
                                   window.scrollTo(0, 0)
 
                                  }}
@@ -161,7 +173,7 @@ if(window.location.href=="http://localhost:3000/"){
                              <Link 
                              onClick={() => {
         
-                              window.location.href="/";
+                              
                               window.scrollTo(0, 0)
 
                                 
@@ -173,24 +185,28 @@ if(window.location.href=="http://localhost:3000/"){
                              
                                </Link>
 
-                             } 
+                             }  */}
 
-
+                           </a>
                             </li>
                        
                           <li className="mb-2 megamenu-item">
-                          
+                          <a className="megamenu-link" href="/landingpage">
+                           Booking
+                    
+                           </a>
+        
 
                            
 
-                            {windowDimensions ?
+                            {/* {windowDimensions ?
                           <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
                          
                          
                           <Link  
                           onClick={() => {
         
-                            window.location.href="/landingpage";
+                            // window.location.href="/landingpage";
                             window.scrollTo(0, 0);
 
                            }} 
@@ -204,7 +220,7 @@ if(window.location.href=="http://localhost:3000/"){
                              <Link  
                              onClick={() => {
         
-                              window.location.href="/landingpage";
+                              // window.location.href="/landingpage";
                               window.scrollTo(0, 0)
 
                              }} 
@@ -219,151 +235,54 @@ if(window.location.href=="http://localhost:3000/"){
                           
                             
                             
-                            
+                             */}
                             {/* </a> */}
                             </li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                         onClick={() => {
-                          window.scrollTo(0, 0);
-                          window.location.href="/about";
-
-                         }}
-                          className="megamenu-link" to="/about">
+                          <li className="mb-2 megamenu-item">
                             
+                            <a href="/about" className="megamenu-link" >
+
+
+
+                         
                           About
+                    
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/about";
-
-                             }}
-                             className="megamenu-link" to="/about">
+                                                     
                             
-                            About
-                             
-                               </Link>
-
-                             } 
+                            </a>
                             
+                            
+                            </li>
                         
-                            </a></li>
-                        
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/contact_us";
-
-                           }}
-                          className="megamenu-link" to="/contact_us">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="contact_us" className="megamenu-link" >
                           Contact Us
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/contact_us";
-
-                             }}
-                             className="megamenu-link" to="/contact_us">
-                            
-                            Contact Us
-                             
-                               </Link>
-
-                             } 
                          
                             
-                            </a></li>
+                            </a>
+                            
+                            
+                            </li>
                         </ul>
                         <h6 className="d-block text-primary">Legal</h6>
+
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/legal";
 
-                           }}
-                          className="megamenu-link" to="/legal">
+                          <li className="mb-2 megamenu-item">
                             
-                          Leagal
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/legal";
-
-                             }}
-                             className="megamenu-link" to="/legal">
-                            
+                            <a href="/legal" className="megamenu-link" >
                             Leagal
-                             
-                               </Link>
-
-                             } 
+                         
                             
                          
                             
                             
                             </a></li>
                           
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/pricing";
-
-                           }}
-                          className="megamenu-link" to="/pricing">
-                            
-                          Pricing
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/pricing";
-
-                             }}
-                             className="megamenu-link" to="/pricing">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/pricing" className="megamenu-link" >
                             Pricing
-                             
-                               </Link>
-
-                             } 
                          
                             </a>
                           </li>
@@ -371,314 +290,66 @@ if(window.location.href=="http://localhost:3000/"){
                       </div>
                       <div className="col-6 col-lg-4">
                         <h6 className="d-block mb-3 text-primary">Listing</h6>
+
+
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/all_spaces";
 
-                           }}
-                          className="megamenu-link" to="/all_spaces">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/all_spaces" className="megamenu-link" >
                             All spaces
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/all_spaces";
-
-                             }}
-                             className="megamenu-link" to="/all_spaces">
-                            
-                            All spaces
-                             
-                               </Link>
-
-                             } 
-                            
-                            
                            </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                            
-                            
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/all_spaces_mAp";
-
-                           }}
-                          className="megamenu-link" to="/all_spaces_mAp">
-                            
-                           Map View
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/all_spaces_mAp";
-
-                             }}
-                             className="megamenu-link" to="/all_spaces_mAp">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/all_spaces_mAp" className="megamenu-link" >
                             Map View
-                             
-                               </Link>
-
-                             } 
-                            
                             
                             
                             </a>
                           </li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/all_spaces_sidbar";
-
-                           }}
-                          className="megamenu-link" to="/all_spaces_sidbar">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/all_spaces_sidbar"  className="megamenu-link" >
                             All spaces
                           sidebar
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/all_spaces_sidbar";
-
-                             }}
-                             className="megamenu-link" to="/all_spaces_sidbar">
-                            
-                            All spaces
-                          sidebar
-                             
-                               </Link>
-
-                             } 
-                            
+                         
                            </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
+                          <li className="mb-2 megamenu-item">
+                            <a href="/single_space" className="megamenu-link" >
                             
-                            
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/single_space";
-
-                           }}
-                          className="megamenu-link" to="/single_space">
-                            
-                          Space Detail
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/single_space";
-
-                             }}
-                             className="megamenu-link" to="/single_space">
-                            
-                           Space Detail
-                             
-                               </Link>
-
-                             }
-                            
-                            
-                            
-                            
-                            
+                            Space Detail
+                           
                             </a>
                           </li>
                         
                         </ul>
                         <h6 className="d-block mb-3 text-primary">Support</h6>
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link">
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/support";
-
-                           }}
-                          className="megamenu-link" to="/support">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/support" className="megamenu-link">
                             Support center
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/support";
-
-                             }}
-                             className="megamenu-link" to="/support">
-                            
-                            Support center
-                             
-                               </Link>
-
-                             }
-                           
-                            
-                            
                             </a>
                           </li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/support_topic";
-
-                           }}
-                          className="megamenu-link" to="/support_topic">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/support_topic" className="megamenu-link" >
                             Support
                           topic
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/support_topic";
-
-                             }}
-                             className="megamenu-link" to="/support_topic">
-                            
-                            Support
-                          topic
-                             
-                               </Link>
-
-                             }
 
                            </a></li>
                         </ul>
                         <h6 className="d-block mb-3 text-primary">Blog</h6>
                         <ul className="list-style-none mb-4">
-                        <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                        onClick={() => {
-                          window.scrollTo(0, 0);
-                          window.location.href="/blog";
 
-                         }}
-                          className="megamenu-link" to="/blog">
-                            
+
+                        <li className="mb-2 megamenu-item">
+                          <a href="/blog" className="megamenu-link" >
                           Blog
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/blog";
-
-                             }}
-                             className="megamenu-link" to="/blog">
-                            
-                            Blog
-                             
-                               </Link>
-
-                             }  
-                         
                             </a></li>
-                            <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
+                            <li className="mb-2 megamenu-item">
+                              <a href="/blog_post" className="megamenu-link" >
+                              Blog Post 
                          
-                         
-                          <Link  
-                        onClick={() => {
-                          window.scrollTo(0, 0);
-                          window.location.href="/blog_post";
-
-                         }}
-                          className="megamenu-link" to="/blog_post">
-                            
-                          Blog Post
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/blog_post";
-
-                             }}
-                             className="megamenu-link" to="/blog_post">
-                            
-                            Blog Post
-                             
-                               </Link>
-
-                             }  
                          
                             </a></li>
                         </ul>
@@ -686,372 +357,63 @@ if(window.location.href=="http://localhost:3000/"){
                       <div className="col-6 col-lg-4">
                         <h6 className="d-block mb-3 text-primary">User</h6>
                         <ul className="list-style-none mb-4">
-                        <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                        {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/profile";
-
-                           }}
-                          className="megamenu-link" to="/profile">
-                            
+                        <li className="mb-2 megamenu-item">
+                          <a href="/profile" className="megamenu-link" >
                           Profile
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/profile";
-
-                             }}
-                             className="megamenu-link" to="/profile">
-                            
-                            Profile
-                             
-                               </Link>
-
-                             } 
-                       
-                          
-                          
-                          
-                          
-                          
+                        
                           </a></li>
-                        <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                        {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link  
-                          
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/reset_password";
-
-                           }}
-                          className="megamenu-link" to="/reset_password">
-                            
+                        <li className="mb-2 megamenu-item">
+                          <a href="/reset_password" className="megamenu-link" >
                           Reset
                           password
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link  
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/reset_password";
-
-                             }}
-                             
-                             className="megamenu-link" to="/reset_password">
-                            
-                            Reset
-                          password
-                             
-                               </Link>
-
-                             } 
-                          
-                     
-                          
-                         
-                          
-                          
-                          
-                          
+                        
                           </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/sign_in";
-
-                           }} 
-                          className="megamenu-link" to="/sign_in">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/sign_in" className="megamenu-link" >
                             Sign in
                           
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/sign_in";
-
-                             }}
-                             className="megamenu-link" to="/sign_in">
-                            
-                            Sign in
-                             
-                               </Link>
-
-                             } 
-
-                            
-                           
-                            
-                            
-                            
                             </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/sign_up";
-
-                           }} 
-                          className="megamenu-link" to="/sign_up">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/sign_up" className="megamenu-link" >
                             Sign up
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/sign_up";
 
-                             }}
-                             className="megamenu-link" to="/sign_up">
-                            
-                            Sign up
-                             
-                               </Link>
-
-                             } 
-
-                            
+                         
                             </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/forget_password";
-
-                           }} 
-                          className="megamenu-link" to="/forget_password">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/forget_password" className="megamenu-link" >
                             Forgot
                           password
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/forget_password";
-
-                             }}
-                             className="megamenu-link" to="/forget_password">
-                            
-                            Forgot
-                          password
-                             
-                               </Link>
-
-                             } 
-
-                            
-                            
+                         
                            </a></li>
                         
                         </ul>
                         <h6 className="d-block mb-3 text-primary">Special</h6>
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/error404";
-
-                           }} 
-                          className="megamenu-link" to="/error404">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/error404" className="megamenu-link" >
                             404 Not Found 
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/error404";
-
-                             }}
-                             className="megamenu-link" to="/error404">
-                            
-                            404 Not Found
-                             
-                               </Link>
-
-                             } 
-
-                            
-                            
+                         
                             </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/error500";
-
-                           }} 
-                          className="megamenu-link" to="/error500">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/error500" className="megamenu-link" >
                             500 Server Error
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/error500";
-
-                             }}
-                             className="megamenu-link" to="/error500">
-                            
-                            500 Server Error
-                             
-                               </Link>
-
-                             } 
-
-                            
+                         
                             </a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/maintenance";
-
-                           }} 
-                          className="megamenu-link" to="/maintenance">
-                            
-                          Maintenance
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/maintenance";
-
-                             }}
-                             className="megamenu-link" to="/maintenance">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/maintenance" className="megamenu-link" >
                             Maintenance
-                             
-                               </Link>
-
-                             } 
                          
                             </a>
                           </li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link">
-                            
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/coming_soon";
-
-                           }} 
-                          className="megamenu-link" to="/coming_soon">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/coming_soon" className="megamenu-link">
                             Coming soon
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/coming_soon";
-
-                             }}
-                             className="megamenu-link" to="/coming_soon">
-                            
-                            Coming soon
-                             
-                               </Link>
-
-                             }
-                            
-                            </a>
+                             </a>
                           </li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >
-                          {windowDimensions ?
-                          <a href="" role="button" className="" data-toggle="collapse" data-target="#navbar_global" aria-controls="" aria-expanded="false" aria-label="Toggle navigation" >
-                         
-                         
-                          <Link 
-                           onClick={() => {
-                            window.scrollTo(0, 0);
-                            window.location.href="/blank";
-
-                           }} 
-                          className="megamenu-link" to="/blank">
-                            
+                          <li className="mb-2 megamenu-item">
+                            <a href="/blank" className="megamenu-link" >
                             Blank page
-                          
-                            </Link>
-                             </a> 
-                             :
-                             <Link 
-                             onClick={() => {
-                              window.scrollTo(0, 0);
-                              window.location.href="/blank";
-
-                             }}
-                             className="megamenu-link" to="/blank">
-                            
-                            Blank page
-                             
-                               </Link>
-
-                             }
-                            
+                         
                            </a></li>
                         </ul>
                       </div>
@@ -1064,30 +426,30 @@ if(window.location.href=="http://localhost:3000/"){
                       <div className="col-6">
                         <h6 className="d-block mb-3 text-primary">User dashboard</h6>
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >My
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_account" className="megamenu-link" >My
                           account</a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Settings</a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link">Security</a></li>
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_settings"  className="megamenu-link" >Settings</a></li>
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_secuirty"  className="megamenu-link">Security</a></li>
                         </ul>
                         <h6 className="d-block mb-3 text-primary">Items</h6>
                         <ul className="list-style-none">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >My
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_myItem"  className="megamenu-link" >My
                           items</a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Edit
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_editItem"  className="megamenu-link" >Edit
                           item</a></li>
                         </ul>
                       </div>
                       <div className="col-6">
                         <h6 className="d-block mb-3 text-primary">Messaging</h6>
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Messages</a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Chat</a></li>
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_messages"  className="megamenu-link" >Messages</a></li>
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_chat"  className="megamenu-link" >Chat</a></li>
                         </ul>
                         <h6 className="d-block mb-3 text-primary">Billing</h6>
                         <ul className="list-style-none mb-4">
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Billing
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_billing"  className="megamenu-link" >Billing
                           details</a></li>
-                          <li className="mb-2 megamenu-item"><a className="megamenu-link" >Invoice</a>
+                          <li className="mb-2 megamenu-item"><a href="/dashboard_invoice"  className="megamenu-link" >Invoice</a>
                           </li>
                         </ul>
                       </div>
@@ -1128,9 +490,10 @@ if(window.location.href=="http://localhost:3000/"){
 
 
       <Switch>
-        <Route exact path="/">
+     
+         <Route exact path="/">
           <Home />
-        </Route>
+        </Route> 
         <Route path="/landingpage">
           <Landingpage />
         </Route>
@@ -1202,6 +565,33 @@ if(window.location.href=="http://localhost:3000/"){
           </Route>
 
 
+          <Route path="/dashboard_account">
+            <Dashboard_Account />
+          </Route>
+          <Route path="/dashboard_settings">
+            <Dashboard_Settings />
+          </Route>
+          <Route path="/dashboard_secuirty">
+            <Dashboard_Security />
+          </Route>
+          <Route path="/dashboard_myItem">
+            <Dashboard_MyItem />
+          </Route>
+          <Route path="/dashboard_editItem">
+            <Dashboard_EditItem />
+          </Route>
+          <Route path="/dashboard_messages">
+            <Dashboard_Messages />
+          </Route>
+          <Route path="/dashboard_chat">
+            <Dashboard_Chat />
+          </Route>
+          <Route path="/dashboard_billing">
+            <Dashboard_Billing />
+          </Route>
+          <Route path="/dashboard_invoice">
+            <Dashboard_Invoice />
+          </Route>
        
        
       

@@ -61,14 +61,14 @@ function Blog_post() {
         <>
   
   <main>
-    <div className="preloader bg-dark flex-column justify-content-center align-items-center">
+    {/* <div className="preloader bg-dark flex-column justify-content-center align-items-center">
       <div className="position-relative">
 
-        {/* <img src="https://demo.themesberg.com/spaces/assets/img/brand/light-without-letter.svg" alt="Logo loader" />
- <img src="https://demo.themesberg.com/spaces/assets/img/brand/letter.svg" className="rotate-letter" alt="Letter loader" /> */}
+        <img src="https://demo.themesberg.com/spaces/assets/img/brand/light-without-letter.svg" alt="Logo loader" />
+ <img src="https://demo.themesberg.com/spaces/assets/img/brand/letter.svg" className="rotate-letter" alt="Letter loader" /> 
  <p className="rotate-letter  splash_logo">ALMuslims</p>
  </div>
-    </div>
+    </div> */}
     <section className="section-header pb-7 bg-primary text-white">
       <div className="container">
         <div className="row justify-content-center">
