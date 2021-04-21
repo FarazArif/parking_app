@@ -47,7 +47,6 @@ import Dashboard_EditItem from "./components/dashboard/editItem";
 function App() {
   const [windowDimensions, setWindowDimensions] = useState(false);
   const [windowlocation, setWindowlocation] = useState("");
-  const [headerColor, setheadercolor] = useState("");
   const history = useHistory() 
   // function refreshPage(){    
   //     window.parent.location = window.parent.location.href;
@@ -71,22 +70,35 @@ function App() {
     //    behavior: "smooth"
     //  });
    }
-   useEffect(() => {
+   const changeNavbarColor = () =>{
+  
 
-    const changeNavbarColor = () =>{
-      if(window.scrollY >= 80){
+
+
+     if(window.scrollY >= 80){
+       setWindowlocation("#0d1b48");
+     }
+     else{
+      if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/landingpage" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
+        setWindowlocation("transparent");
+      }else{
         setWindowlocation("#0d1b48");
       }
-      else{
-        setWindowlocation("transparent");
-      }
-   };
+      
+     }
+  };
 
-if(window.location.href=="http://localhost:3000/"){
-  setWindowlocation("transparent");
-}else{
-  setWindowlocation("#0d1b48");
-}
+
+
+
+   useEffect(() => {
+
+
+    if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/landingpage" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
+      setWindowlocation("transparent");
+ }else{
+   setWindowlocation("#0d1b48");
+ }
 
 
     //  function updateSize() {
@@ -105,8 +117,8 @@ if(window.location.href=="http://localhost:3000/"){
 
 
    },
-    // [history]
-    []
+     []
+    
    );
 
   return (
@@ -117,9 +129,9 @@ if(window.location.href=="http://localhost:3000/"){
      <header  className="header-global">
         <nav
         
-        style={{backgroundColor:"#0d1b48"}}
+        style={{backgroundColor:windowlocation}}
         id="navbar-main" className="navbar navbar-main navbar-theme-primary navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-transparent navbar-theme-primary">
-        {console.log(windowlocation)};
+       
 
           <div className="container">
             <a className="navbar-brand @@logo_classes" >
@@ -299,13 +311,13 @@ if(window.location.href=="http://localhost:3000/"){
                             All spaces
                           
                            </a></li>
-                          <li className="mb-2 megamenu-item">
+                          {/* <li className="mb-2 megamenu-item">
                             <a href="/all_spaces_mAp" className="megamenu-link" >
                             Map View
                             
                             
                             </a>
-                          </li>
+                          </li> */}
                           <li className="mb-2 megamenu-item">
                             <a href="/all_spaces_sidbar"  className="megamenu-link" >
                             All spaces

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Halmet from "react-helmet";
 import "../spaces.css";
@@ -51,7 +50,7 @@ function Chat() {
             <div className="card-body p-2">
               <div className="profile-thumbnail small-thumbnail mx-auto"><img src="../../assets/img/team/profile-picture-4.jpg" className="card-img-top rounded-circle border-white" alt="Joseph Portrait" /></div>
               <h2 className="h5 font-weight-normal text-center mt-3 mb-0">Neil Sims</h2>
-              <div className="list-group dashboard-menu list-group-sm mt-4"><a href="account.html" className="d-flex list-group-item list-group-item-action">Overview <span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a href="settings.html" className="d-flex list-group-item list-group-item-action">Settings<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a href="my-items.html" className="d-flex list-group-item list-group-item-action">My Items<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a href="security.html" className="d-flex list-group-item list-group-item-action">Security<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a href="billing.html" className="d-flex list-group-item list-group-item-action">Billing<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a href="messages.html" className="d-flex list-group-item list-group-item-action active border-0">Messages<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span></a></div>
+              <div className="list-group dashboard-menu list-group-sm mt-4"><a   className="d-flex list-group-item list-group-item-action">Overview <span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">Settings<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">My Items<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a  className="d-flex list-group-item list-group-item-action">Security<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">Billing<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action active border-0">Messages<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span></a></div>
             </div>
           </div>
         </div>
@@ -59,11 +58,11 @@ function Chat() {
           <div className="card bg-white border-light mb-4 mb-lg-5">
             <div className="card-body">
               <div className="row align-items-center">
-                <div className="col-10 d-flex"><a href="account.html" className="list-group-item list-group-item-action border-0">Overview</a> <a href="settings.html" className="list-group-item list-group-item-action border-0">Settings</a> <a href="my-items.html" className="list-group-item list-group-item-action d-none d-sm-block border-0">My Items</a> <a href="security.html" className="list-group-item list-group-item-action d-none d-md-block border-0">Security</a></div>
+                <div className="col-10 d-flex"><a   className="list-group-item list-group-item-action border-0">Overview</a> <a   className="list-group-item list-group-item-action border-0">Settings</a> <a   className="list-group-item list-group-item-action d-none d-sm-block border-0">My Items</a> <a  className="list-group-item list-group-item-action d-none d-md-block border-0">Security</a></div>
                 <div className="col-2 d-flex justify-content-center">
                   <div className="btn-group dropleft"><button className="btn btn-link dropdown-toggle dropdown-toggle-split mr-2 m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span className="icon icon-sm"><span className="fas fa-ellipsis-h icon-secondary fa-lg" /> </span><span className="sr-only">Toggle
                         Dropdown</span></button>
-                    <div className="dropdown-menu"><a href="my-items.html" className="list-group-item list-group-item-action d-sm-none border-0">My Items</a> <a href="security.html" className="list-group-item list-group-item-action d-md-none border-0">Security</a> <a href="billing.html" className="list-group-item list-group-item-action border-0">Billing</a> <a href="messages.html" className="list-group-item list-group-item-action border-0 active">Messages</a></div>
+                    <div className="dropdown-menu"><a   className="list-group-item list-group-item-action d-sm-none border-0">My Items</a> <a  className="list-group-item list-group-item-action d-md-none border-0">Security</a> <a   className="list-group-item list-group-item-action border-0">Billing</a> <a   className="list-group-item list-group-item-action border-0 active">Messages</a></div>
                   </div>
                 </div>
               </div>
@@ -71,12 +70,12 @@ function Chat() {
           </div>
         </div>
         <div className="col-12 col-lg-8">
-          <div className="text-left mb-3"><a href="messages.html"><span className="icon icon-xs"><span className="fas fa-chevron-left mr-2" /></span> Back to all messages</a></div>
+          <div className="text-left mb-3"><a  ><span className="icon icon-xs"><span className="fas fa-chevron-left mr-2" /></span> Back to all messages</a></div>
           <div className="card bg-soft-green border-light mb-4">
             <div className="row no-gutters align-items-center">
-              <div className="col-12 col-lg-4 col-xl-4"><a href="../single-space.html"><img src="../../assets/img/private-office.jpg" alt="private office" className="card-img p-2 rounded-xl" /></a></div>
+              <div className="col-12 col-lg-4 col-xl-4"><a  ><img src="../../assets/img/private-office.jpg" alt="private office" className="card-img p-2 rounded-xl" /></a></div>
               <div className="col-12 col-lg-7 col-xl-8">
-                <div className="card-body text-dark"><a href="../single-space.html">
+                <div className="card-body text-dark"><a  >
                     <h4 className="h6">Collaborative Workspace</h4>
                   </a>
                   <ul className="list-group mb-3">
@@ -93,7 +92,7 @@ function Chat() {
             </div>
           </div>
           <div className="card bg-white border-light p-4 mb-4">
-            <div className="d-flex justify-content-between align-items-center mb-2"><span className="font-small"><a href="#"><img className="avatar-sm img-fluid rounded-circle mr-2" src="../../assets/img/team/profile-picture-1.jpg" alt="avatar" /> <span className="font-weight-bold">Neil Sims</span> </a><span className="ml-2">March 26, 19:25</span></span>
+            <div className="d-flex justify-content-between align-items-center mb-2"><span className="font-small"><a ><img className="avatar-sm img-fluid rounded-circle mr-2" src="../../assets/img/team/profile-picture-1.jpg" alt="avatar" /> <span className="font-weight-bold">Neil Sims</span> </a><span className="ml-2">March 26, 19:25</span></span>
               <div className="d-none d-sm-block"><button className="btn btn-link text-dark" aria-label="phone" data-toggle="tooltip" data-placement="top" title="Sent from the phone " data-original-title="Sent from the phone"><span className="fas fa-mobile-alt" /></button></div>
             </div>
             <p className="m-0">Hi Chris! Thanks a lot for this very useful template. Saved me a lot of time and searches
@@ -107,7 +106,7 @@ function Chat() {
               your thoughts regarding Spaces.</p>
           </div>
           <div className="card bg-white border-light p-4 mb-5">
-            <div className="d-flex justify-content-between align-items-center mb-2"><span className="font-small"><a href="#"><img className="avatar-sm img-fluid rounded-circle mr-2" src="../../assets/img/team/profile-picture-1.jpg" alt="avatar" /> <span className="font-weight-bold">Neil Sims</span> </a><span className="ml-2">March 26, 19:25</span></span>
+            <div className="d-flex justify-content-between align-items-center mb-2"><span className="font-small"><a ><img className="avatar-sm img-fluid rounded-circle mr-2" src="../../assets/img/team/profile-picture-1.jpg" alt="avatar" /> <span className="font-weight-bold">Neil Sims</span> </a><span className="ml-2">March 26, 19:25</span></span>
               <div className="d-none d-sm-block"><button className="btn btn-link text-dark" aria-label="phone" data-toggle="tooltip" data-placement="top" title="Sent from the phone " data-original-title="Sent from the phone"><span className="fas fa-mobile-alt" /></button></div>
             </div>
             <p className="m-0">Hi Chris! Thanks a lot for this very useful template. Saved me a lot of time and searches

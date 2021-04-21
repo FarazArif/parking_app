@@ -71,7 +71,7 @@ export default function Legal() {
                                             <div className="pt-3">
                                                 <p>By accessing and placing an order with us, you confirm that you are in agreement with and
                                                 bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply
-                            to the entire website and any email or other type of communication between you and us.</p>
+                                                to the entire website and any email or other type of communication between you and us.</p>
                                                 <p>Read more about <a >terms of service</a>.</p>
                                             </div>
                                         </div>
@@ -81,7 +81,7 @@ export default function Legal() {
                                             <div className="pt-3">
                                                 <p>By accessing and placing an order with us, you confirm that you are in agreement with and
                                                 bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply
-                            to the entire website and any email or other type of communication between you and us.</p>
+                                                to the entire website and any email or other type of communication between you and us.</p>
                                             </div>
                                         </div>
                                     </div>

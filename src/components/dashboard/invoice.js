@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Halmet from "react-helmet";
 import "../spaces.css";
@@ -45,7 +44,7 @@ function Invoice() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12 col-lg-10">
-          <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between mb-4"><a href="billing.html" className="mb-4 mb-lg-0"><span className="icon icon-xs"><span className="fas fa-chevron-left mr-2" /></span> Back to all billing</a>
+          <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between mb-4"><a   className="mb-4 mb-lg-0"><span className="icon icon-xs"><span className="fas fa-chevron-left mr-2" /></span> Back to all billing</a>
             <div><button className="btn btn-primary mr-2"><span className="far fa-file-pdf mr-2" /> Download PDF</button>
               <button className="btn btn-outline-gray"><span className="fas fa-print mr-2" /> Print Invoice</button>
             </div>
@@ -57,7 +56,7 @@ function Invoice() {
                 <ul className="list-group simple-list">
                   <li className="list-group-item font-weight-norma pl-0 py-1">112 Washington Square</li>
                   <li className="list-group-item font-weight-normal pl-0 py-1">New York, USA</li>
-                  <li className="list-group-item font-weight-normal pl-0 py-1"><a className="font-weight-bold text-primary" href="#"><span className="__cf_email__" data-cfemail="f695999b8697988fb6829e939b938594938491d895999b">[email&nbsp;protected]</span></a>
+                  <li className="list-group-item font-weight-normal pl-0 py-1"><a className="font-weight-bold text-primary"  ><span className="__cf_email__" data-cfemail="f695999b8697988fb6829e939b938594938491d895999b">[email&nbsp;protected]</span></a>
                   </li>
                 </ul>
               </div>
@@ -74,7 +73,7 @@ function Invoice() {
                     <li className="list-group-item font-weight-norma pl-0 py-1">Themesberg LLC</li>
                     <li className="list-group-item font-weight-norma pl-0 py-1">311 West Mechanic Lane Middletown, NY
                       10940</li>
-                    <li className="list-group-item font-weight-norma pl-0 py-1"><a className="font-weight-bold text-primary" href="#"><span className="__cf_email__" data-cfemail="bcd2ddd1d9fcdfd3d1ccddd2c592dfd3d1">[email&nbsp;protected]</span></a></li>
+                    <li className="list-group-item font-weight-norma pl-0 py-1"><a className="font-weight-bold text-primary"  ><span className="__cf_email__" data-cfemail="bcd2ddd1d9fcdfd3d1ccddd2c592dfd3d1">[email&nbsp;protected]</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -158,7 +157,7 @@ function Invoice() {
                     </table>
                   </div>
                 </div>
-                <h4>Payments to:</h4><span><a href="https://demo.themesberg.com/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="7505140c18101b0135161a1805141b0c5b161a18">[email&nbsp;protected]</a></span>
+                <h4>Payments to:</h4><span><a   className="__cf_email__" data-cfemail="7505140c18101b0135161a1805141b0c5b161a18">[email&nbsp;protected]</a></span>
               </div>
             </div>
           </div>
