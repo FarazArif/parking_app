@@ -1,0 +1,218 @@
+ .checkout_most_main_div {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f4f9;
+     font-size: 0.8rem 
+} 
+.Checkout_inline_tags{
+    display: flex;
+    
+}
+.Checkout_inline_2ndtag{
+    margin-left: 10px;
+}
+.Checkout_card {
+    width: 80%;
+    margin:30px
+}
+
+.Checkout_card-top {
+    padding: 0.7rem 5rem
+}
+
+.Checkout_card-top a {
+    float: left;
+    margin-top: 0.7rem
+}
+
+/* #logo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 1.6rem
+} */
+
+.Checkout_card-body {
+   
+    /* padding: 0 5rem 5rem 5rem;
+    background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+    background-size: cover;
+    background-repeat: no-repeat */
+}
+.checkout_1st_div{
+    
+}
+
+
+@media(max-width:768px) {
+    /* .Checkout_card-body {
+        padding: 0 1rem 1rem 1rem;
+        background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    } */
+
+    .Checkout_card-top {
+        padding: 0.7rem 1rem
+    }
+}
+
+.checkout_heading{
+    border-bottom: 2px solid #eff2f8;
+}
+.row {
+    margin: 0
+}
+
+/* .upper {
+    padding: 1rem 0;
+    justify-content: space-evenly
+} */
+
+/* #three {
+    border-radius: 1rem;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    border: 1px solid blue;
+    text-align: center;
+    display: inline-block
+} */
+
+/* #payment {
+    margin: 0;
+    color: blue
+} */
+
+.Checkout_icons {
+    margin-left: auto
+}
+
+.Checkout_form span {
+    color: rgb(179, 179, 179)
+}
+
+.Checkout_form {
+    padding: 2vh 0
+}
+
+.Checkout_input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+.Checkout_input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.Checkout_header {
+    font-size: 1.5rem
+}
+
+.Checkout_left {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.Checkout_left img {
+    width: 2rem
+}
+
+.Checkout_left .col-4 {
+    padding-left: 0
+}
+
+.Checkout_right .item {
+    padding: 0.3rem 0
+}
+
+.Checkout_right {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.Checkout_col-8 {
+    padding: 0 1vh
+}
+
+.Checkout_lower {
+    line-height: 2
+}
+
+.bCheckout_btntn {
+    background-color: rgb(23, 4, 189);
+    border-color: rgb(23, 4, 189);
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin: 4vh 0 1.5vh 0;
+    padding: 1.5vh;
+    border-radius: 0
+}
+
+.Checkout_btn:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none
+}
+
+.Checkout_btn:hover {
+    color: white
+}
+
+a {
+    color: black
+}
+
+a:hover {
+    color: black;
+    text-decoration: none
+}
+
+.Checkout_input[type=checkbox] {
+    width: unset;
+    margin-bottom: unset
+}
+
+#cvv {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center
+}
+
+#cvv:hover {}
+
+@media(max-width:500px) {
+    .Checkout_inline_tags{
+        display: block;
+    }
+    .Checkout_inline_2ndtag{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .Checkout_card{
+        width: 100%;
+    }
+}
+
+
+
+.checkout_button{
+    background-color: red;
+    color: white;
+}
+.check_last_div{
+    margin-top: 10px;
+}

@@ -35,9 +35,9 @@ import Dashboard_Billing from "./components/dashboard/billing";
 import Dashboard_Invoice from "./components/dashboard/invoice";
 import Dashboard_MyItem from "./components/dashboard/myItem";
 import Dashboard_EditItem from "./components/dashboard/editItem";
-
-
-
+import Checkout from "./components/checkout/checkout"
+import Checkout_Billing from "./components/checkoutcard_detail/checkout_card_detail"
+import AdminPanel from "./components/adminpanel/adminpanel";
 
 
 
@@ -47,7 +47,11 @@ import Dashboard_EditItem from "./components/dashboard/editItem";
 function App() {
   const [windowDimensions, setWindowDimensions] = useState(false);
   const [windowlocation, setWindowlocation] = useState("");
+  const [showadmin, setshowadmin] = useState("block");
   const history = useHistory() 
+
+
+ 
   // function refreshPage(){    
   //     window.parent.location = window.parent.location.href;
   //    } 
@@ -99,7 +103,11 @@ function App() {
  }else{
    setWindowlocation("#0d1b48");
  }
-
+if(window.location.href=="http://localhost:3000/checkout" || window.location.href=="http://localhost:3000/checkout_billingcard" || window.location.href=="http://localhost:3000/adminpanel"){
+  setshowadmin("none");
+}else{
+  setshowadmin("block");
+}
 
     //  function updateSize() {
     //    let width=window.innerWidth;
@@ -126,7 +134,7 @@ function App() {
     <div>
       
      
-     <header  className="header-global">
+     <header style={{display:showadmin}}  className="header-global">
         <nav
         
         style={{backgroundColor:windowlocation}}
@@ -604,6 +612,16 @@ function App() {
           <Route path="/dashboard_invoice">
             <Dashboard_Invoice />
           </Route>
+
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
+          <Route path="/checkout_billingcard">
+            <Checkout_Billing />
+          </Route>
+          <Route path="/adminpanel">
+            <AdminPanel />
+          </Route>
        
        
       
@@ -611,7 +629,7 @@ function App() {
       </div>
 
 
-      <footer className="footer pb-5 bg-primary text-white   footer_padding_property">
+      <footer style={{display:showadmin}} className="footer pb-5 bg-primary text-white   footer_padding_property">
         <div className="container">
           <div className="row mt-6 section_headings">
             <div className="col-xl-3 mb-3 mb-xl-0">

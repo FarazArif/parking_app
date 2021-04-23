@@ -85,7 +85,7 @@ export default function Home() {
               <div className="col-12">
                 <div className="card p-md-2">
                   <div className="card-body p-2 p-md-0">
-                    <form autoComplete="off" className="row" method="get" action="">
+                    <form href="/checkout" autoComplete="off" className="row" method="get" action="">
                       <div className="col-12 col-lg-5">
                         <div className="form-group form-group-lg mb-lg-0">
                           <div className="input-group">
@@ -98,7 +98,11 @@ export default function Home() {
                           <div className="input-group-prepend"><span className="input-group-text"><i className="far fa-calendar-alt" /></span></div><input className="form-control datepicker" placeholder="Select date" type="text" required />
                         </div>
                       </div>
-                      <div className="col-12 col-lg-3"><button className="btn btn-lg btn-primary btn-block animate-up-2" type="submit">Book Now</button></div>
+                      <div className="col-12 col-lg-3">
+                     
+                        <button  className="btn btn-lg btn-primary btn-block animate-up-2" type="submit">Book Now</button>
+                      
+                        </div>
                     </form>
                   </div>
                 </div>

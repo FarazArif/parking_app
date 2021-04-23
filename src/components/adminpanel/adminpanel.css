@@ -1,0 +1,13 @@
+.admin_most_main_div{
+    width: 100%;
+    overflow-x: hidden;
+}
+.side_bar_fist_div>li:not(:last-child) {
+    padding-right: 0rem !important;
+}
+.side_bar_fist_div li a{
+    border: 0px !important;
+}
+.admin_header_nav_link{
+    padding-top:5px !important;
+}
