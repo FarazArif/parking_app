@@ -69,9 +69,9 @@ export default function Home() {
             <div className="row justify-content-center mb-4 mb-xl-5">
               <div className="col-12 col-xl-10 text-center">
                 <h1 className="display-2">
-                  <Link to="/landingpage">
+                 
                   Find your Place.
-                  </Link>
+                
                   </h1>
                 <p className="lead text-muted mt-4 px-md-6">
                   {/* <span className="font-weight-bold">12,000+
@@ -85,7 +85,9 @@ export default function Home() {
               <div className="col-12">
                 <div className="card p-md-2">
                   <div className="card-body p-2 p-md-0">
-                    <form href="/checkout" autoComplete="off" className="row" method="get" action="">
+                    <form 
+                    // action="/checkout"
+                     autoComplete="off" className="row" method="get" >
                       <div className="col-12 col-lg-5">
                         <div className="form-group form-group-lg mb-lg-0">
                           <div className="input-group">
@@ -100,8 +102,8 @@ export default function Home() {
                       </div>
                       <div className="col-12 col-lg-3">
                      
-                        <button  className="btn btn-lg btn-primary btn-block animate-up-2" type="submit">Book Now</button>
                       
+                        <button  className="btn btn-lg btn-primary btn-block animate-up-2" type="submit">Book Now</button>
                         </div>
                     </form>
                   </div>

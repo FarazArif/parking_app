@@ -50,9 +50,11 @@ function Invoice() {
             </div>
           </div>
           <div className="card border-light p-4 p-md-5 position-relative">
-            <div className="d-flex justify-content-between pb-4 pb-md-5 mb-4 mb-md-5 border-bottom border-light"><img src="https://demo.themesberg.com/spaces/assets/img/brand/dark.svg" className="d-none d-lg-block" height={30} alt="Spaces Logo" />
+            <div className="d-flex justify-content-between pb-4 pb-md-5 mb-4 mb-md-5 border-bottom border-light">
+              {/* <img src="https://demo.themesberg.com/spaces/assets/img/brand/dark.svg" className="d-none d-lg-block" height={30} alt="Spaces Logo" /> */}
+              <h3>Al-Muslims</h3>
               <div>
-                <h4>Spaces LLC.</h4>
+                <h4>Parking LLC.</h4>
                 <ul className="list-group simple-list">
                   <li className="list-group-item font-weight-norma pl-0 py-1">112 Washington Square</li>
                   <li className="list-group-item font-weight-normal pl-0 py-1">New York, USA</li>

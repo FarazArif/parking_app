@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import React,{useEffect,useState} from "react";
 import './App.css';
+import { BrowserRouter, Route,Switch,Link,useLocation,useHistory} from 'react-router-dom';
 import Landingpage from "./components/landingpage/landingpage"
 import Home from "./components/home/home"
 import Blog from "./components/blog"
 import Blog_Post from "./components/blog_post"
 import Contact_Us from "./components/contact"
 import About from "./components/about";
-import { BrowserRouter, Route,Switch,Link,useLocation,useHistory} from 'react-router-dom';
 import Legal from "./components/legal/legal";
 import Maintenance from "./components/maintenance/maintenance";
 import Pricing from "./components/pricing/pricing";
@@ -37,7 +37,7 @@ import Dashboard_MyItem from "./components/dashboard/myItem";
 import Dashboard_EditItem from "./components/dashboard/editItem";
 import Checkout from "./components/checkout/checkout"
 import Checkout_Billing from "./components/checkoutcard_detail/checkout_card_detail"
-import AdminPanel from "./components/adminpanel/adminpanel";
+ import AdminPanel from "./components/adminpanel/adminpanel";
 
 
 
@@ -83,7 +83,7 @@ function App() {
        setWindowlocation("#0d1b48");
      }
      else{
-      if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/landingpage" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
+      if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/booking" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
         setWindowlocation("transparent");
       }else{
         setWindowlocation("#0d1b48");
@@ -98,12 +98,12 @@ function App() {
    useEffect(() => {
 
 
-    if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/landingpage" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
+    if(window.location.href=="http://localhost:3000/" || window.location.href=="http://localhost:3000/booking" || window.location.href=="http://localhost:3000/about" || window.location.href=="http://localhost:3000/contact_us" || window.location.href=="http://localhost:3000/all_spaces"|| window.location.href=="http://localhost:3000/all_spaces_sidbar"|| window.location.href=="http://localhost:3000/single_space"|| window.location.href=="http://localhost:3000/reset_password"|| window.location.href=="http://localhost:3000/sign_in" || window.location.href=="http://localhost:3000/sign_up" || window.location.href=="http://localhost:3000/forget_password"){
       setWindowlocation("transparent");
  }else{
    setWindowlocation("#0d1b48");
  }
-if(window.location.href=="http://localhost:3000/checkout" || window.location.href=="http://localhost:3000/checkout_billingcard" || window.location.href=="http://localhost:3000/adminpanel"){
+if(window.location.href=="http://localhost:3000/checkout" || window.location.href=="http://localhost:3000/checkout_billing" || window.location.href=="http://localhost:3000/adminpanel"){
   setshowadmin("none");
 }else{
   setshowadmin("block");
@@ -211,7 +211,7 @@ if(window.location.href=="http://localhost:3000/checkout" || window.location.hre
                             </li>
                        
                           <li className="mb-2 megamenu-item">
-                          <a className="megamenu-link" href="/landingpage">
+                          <a className="megamenu-link" href="/booking">
                            Booking
                     
                            </a>
@@ -514,7 +514,7 @@ if(window.location.href=="http://localhost:3000/checkout" || window.location.hre
          <Route exact path="/">
           <Home />
         </Route> 
-        <Route path="/landingpage">
+        <Route path="/booking">
           <Landingpage />
         </Route>
         <Route path="/about">
@@ -613,12 +613,12 @@ if(window.location.href=="http://localhost:3000/checkout" || window.location.hre
             <Dashboard_Invoice />
           </Route>
 
-          <Route path="/checkout">
+          {/* <Route path="/checkout">
             <Checkout />
           </Route>
-          <Route path="/checkout_billingcard">
+          <Route path="/checkout_billing">
             <Checkout_Billing />
-          </Route>
+          </Route> */}
           <Route path="/adminpanel">
             <AdminPanel />
           </Route>

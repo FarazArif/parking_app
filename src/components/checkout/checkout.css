@@ -213,6 +213,10 @@ a:hover {
     background-color: red;
     color: white;
 }
+.checkout_button:hover{
+
+    color: white;
+}
 .check_last_div{
     margin-top: 10px;
 }

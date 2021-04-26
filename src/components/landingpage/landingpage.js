@@ -198,8 +198,11 @@ export default function Landingpage() {
                             <div className="row align-items-center">
                               <div className="col-6 col-lg-4 mb-3 mb-lg-0"><button className="btn btn-primary btn-block animate-up-2" type="submit">Find a desk</button></div>
                               <div className="col-6 col-lg-4 mb-3 mb-lg-0"><button className="btn btn-outline-gray btn-block animate-up-2" type="reset">Reset</button></div>
-                              <div className="col-12 col-lg-4 d-flex justify-content-between align-items-center"><a  data-target="#collapseAdvanced" className="accordion-panel-header d-block" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseAdvanced"><span className="icon"><span className="fas fa-plus-circle" /></span> <span className="icon-title font-weight-normal text-gray ml-2 mb-0">Advanced Search</span> </a><a href=""  data-toggle="modal" data-target="#map-listings" className="btn btn-sm btn-tertiary mr-2"><span className="fas fa-map-marker-alt mr-2" />
-                                <span>Map View</span></a></div>
+                              <div className="col-12 col-lg-4 d-flex justify-content-between align-items-center"><a  data-target="#collapseAdvanced" className="accordion-panel-header d-block" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseAdvanced"><span className="icon"><span className="fas fa-plus-circle" /></span> <span className="icon-title font-weight-normal text-gray ml-2 mb-0">Advanced Search</span> </a>
+                              {/* <a href=""  data-toggle="modal" data-target="#map-listings" className="btn btn-sm btn-tertiary mr-2"><span className="fas fa-map-marker-alt mr-2" />
+                                <span>Map View</span></a> */}
+                                
+                                </div>
                             </div>
                           </div>
                         </div>

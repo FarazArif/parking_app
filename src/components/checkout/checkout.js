@@ -1,7 +1,11 @@
 import React from "react"
 import "./checkout.css"
+import { BrowserRouter, Route,Switch,Link,useLocation,useHistory} from 'react-router-dom';
+import Checkout_Billing from "../checkoutcard_detail/checkout_card_detail";
+
 export default function Checkout() {
     return (
+        <BrowserRouter>
         <div className="checkout_most_main_div">
             <div className="Checkout_card">
                 {/* <div className="Checkout_card-top border-bottom text-center"> <a href="#"> Back to shop</a> <span id="logo">BBBootstrap.com</span> </div> */}
@@ -45,7 +49,7 @@ export default function Checkout() {
                                         </div>
 
                                 </form> */}
-                                <form>
+                                <form >
                                     <br></br>
                                     <br></br>
                                     <h6>Shipping Information</h6>
@@ -89,8 +93,10 @@ export default function Checkout() {
                                             Save Information
                                              </label>
                                     </div>
-                                    <button type="submit" className="btn checkout_button">Continue</button>
                                 </form>
+                                      <a href="/checkout_billing">
+                                    <button   className="btn checkout_button">Continue</button>
+                                    </a>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -177,5 +183,12 @@ export default function Checkout() {
                 <div> </div>
             </div>
         </div>
+        <Switch>
+     
+     <Route exact path="/checkout_billing">
+      <Checkout_Billing />
+    </Route> 
+    </Switch>
+</BrowserRouter>
     );
 }

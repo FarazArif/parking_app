@@ -25712,7 +25712,7 @@ button.section-github:hover {
         color: rgba(255, 255, 255, 0.25);
     }
     .navbar-transparent .navbar-brand {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.9) ;
     }
     .navbar-transparent .navbar-brand:focus,
     .navbar-transparent .navbar-brand:hover {

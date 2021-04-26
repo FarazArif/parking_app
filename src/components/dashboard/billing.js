@@ -83,7 +83,7 @@ function Billing() {
                     <div className="col-12 mb-4">
                       <div className="card border-light text-center py-4 mb-4">
                         <div className="card-body">
-                          <h2 className="display-4 mb-3">Spaces<span className="pixel-pro-badge subscription-badge bg-secondary font-weight-bolder text-white">PRO</span>
+                          <h2 className="display-4 mb-3">Al-Muslims<span className="pixel-pro-badge subscription-badge bg-secondary font-weight-bolder text-white">PRO</span>
                           </h2>
                           <p className="my-4">Next payment of <span className="font-weight-bold">$36 (yearly)</span> occurs on August
                       13, 2020.</p>
