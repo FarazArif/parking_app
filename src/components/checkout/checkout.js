@@ -1,9 +1,19 @@
 import React from "react"
 import "./checkout.css"
+import axios from 'axios'; 
 import { BrowserRouter, Route,Switch,Link,useLocation,useHistory} from 'react-router-dom';
 import Checkout_Billing from "../checkoutcard_detail/checkout_card_detail";
 
 export default function Checkout() {
+   async function SenRequest(){
+        let resp= await  axios.post('/checkout', "hlo")
+        .then(function (resp) {
+            console.log("res")
+             .catch(function (error) {
+                console.log(error);
+            });
+        })
+    }
     return (
         <BrowserRouter>
         <div className="checkout_most_main_div">
@@ -94,9 +104,11 @@ export default function Checkout() {
                                              </label>
                                     </div>
                                 </form>
-                                      <a href="/checkout_billing">
-                                    <button   className="btn checkout_button">Continue</button>
-                                    </a>
+                                     <a href="/checkout_billing"> 
+                                    <button 
+                                    // onClick={SenRequest}
+                                    className="btn checkout_button">Continue</button>
+                                     </a> 
                             </div>
                         </div>
                         <div className="col-md-4">

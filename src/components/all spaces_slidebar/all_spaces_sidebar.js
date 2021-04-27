@@ -2,7 +2,7 @@
 import React from 'react';
 import Halmet from "react-helmet";
 import "../spaces.css";
-
+import All_Sapces_Sidebar_card from "./all_spaces_sidebar_card";
 
 
 function AllSpacesSidbar() {
@@ -163,7 +163,7 @@ function AllSpacesSidbar() {
                           </li>
                         </ul>
                       </div> */}
-                      
+
                       <button className="btn btn-sm btn-block btn-primary animate-up-2 mt-4" type="submit">Apply
                   filters</button>
                     </form>
@@ -287,7 +287,9 @@ function AllSpacesSidbar() {
                     </div>
                     <div className="tab-pane fade show active" id="link-example-14" role="tabpanel" aria-labelledby="tab-link-example-14">
                       <div className="row">
-                        <div className="col-12 col-md-6">
+                      {/* Row */}
+                      <All_Sapces_Sidebar_card/>
+                        {/* <div className="col-12 col-md-6">
                           <div className="card border-light mb-4 animate-up-5"><a   className="position-relative"><img src="../assets/img/image-office.jpg" className="card-img-top rounded-xl p-2" alt="themesberg office" /></a>
                             <div className="card-body"><a  >
                               <h4 className="h5">Coworking Workspace</h4>
@@ -430,7 +432,7 @@ function AllSpacesSidbar() {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="col mt-3 d-flex justify-content-center">

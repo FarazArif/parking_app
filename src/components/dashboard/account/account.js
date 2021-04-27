@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Halmet from "react-helmet";
-import "../spaces.css";
+import "../../spaces.css";
 
 
 

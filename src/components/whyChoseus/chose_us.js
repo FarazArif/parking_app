@@ -1,7 +1,27 @@
 import React from 'react';
- import '../spaces.css';
+    
 
-export default function Chose_Us(){
+export default function Chose_Us() {
+    let serves_array = [
+        {
+            icon: "fas fa-chair",
+            heading: "Professionalism",
+            detail: "We have a highly qualified team of professionals" ,
+           
+        },
+        {
+            icon: "fas fa-chair",
+            heading: "Precision",
+            detail: "We have a highly qualified team of professionals" ,
+           
+        },
+        {
+            icon: "fas fa-chair",
+            heading: "Confidence",
+            detail: "We have a highly qualified team of professionals" ,
+           
+        },
+    ]
     return (
         <section className="section section-lg bg-soft pb-11 chose_us_main_section">
             <div className="container">
@@ -17,46 +37,24 @@ export default function Chose_Us(){
                     <div className="col-md-6 col-lg-7 mb-5"><img className="img-fluid d-none d-md-block" src="https://demo.themesberg.com/spaces/assets/img/illustrations/why-us.svg" alt="Laptop illustration" />
                     </div>
                     <div className="col-md-6 col-lg-4">
-                        <div className="card mb-2 bg-soft">
-                            <div className="card-body p-0">
-                                <div className="d-flex p-2">
-                                    <div>
-                                        <div className="icon icon-secondary"><span className="fas fa-chair" /></div>
-                                    </div>
-                                    <div className="pl-4 section_headings">
-                                        <h3 className="h5 icon-box-title">	
-Professionalism</h3>
-                                        <p>We have a highly qualified team  &amp; of professionals</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card mb-2 bg-soft">
-                            <div className="card-body p-0">
-                                <div className="d-flex p-2">
-                                    <div>
-                                        <div className="icon icon-secondary"><span className="fas fa-chair" /></div>
-                                    </div>
-                                    <div className="pl-4 section_headings">
-                                        <h3 className="h5 icon-box-title">Precision</h3>
-                                        <p>We guarantee maximum punctuality and very  &amp; fast delivery times</p>
+                        {serves_array.map((person, index) => (
+
+                            <div index={index} className="card mb-2 bg-soft">
+                                <div className="card-body p-0">
+                                    <div className="d-flex p-2">
+                                        <div>
+                                            <div className="icon icon-secondary">
+                                                <span className={person.icon} /></div>
+                                        </div>
+                                        <div className="pl-4 section_headings">
+                                            <h3 className="h5 icon-box-title">	{person.heading}</h3>
+
+                                            <p>{person.detail}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="card mb-2 bg-soft">
-                            <div className="card-body p-0">
-                                <div className="d-flex p-2">
-                                    <div>
-                                        <div className="icon icon-secondary"><span className="fas fa-chair" /></div>
-                                    </div>
-                                    <div className="pl-4 section_headings">
-                                        <h3 className="h5 icon-box-title">Confidence</h3>
-                                        <p>We are rewarded by the loyalty of our customers &amp; our customers</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

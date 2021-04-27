@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     background-color: #f2f4f9;
-     font-size: 0.8rem 
+     font-size: 0.8rem ;
+     padding-top: 90px;
 } 
 .Checkout_inline_tags{
     display: flex;

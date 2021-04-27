@@ -39,35 +39,7 @@ export default function Checkout() {
                   <br></br>
                   <br></br>
 
-                  {/* <div className="form-group">
-                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name" />
-
-
-                                    </div>
-                                    <br></br>
-                                    <div className="form-group">
-                                        <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Mobile Number" />
-                                    </div>
-                                    <h6>Address</h6>
-                                    <div className="Checkout_inline_tags">
-                                        <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Street" />
-                                        <input type="text" className="form-control Checkout_inline_2ndtag" id="exampleInputPassword1" placeholder="Apartment,unit,etc" />
-                                    </div>
-                                    <br></br>
-                                    <br></br>
-
-
-                                    <div className="Checkout_inline_tags">
-                                        <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Country" />
-                                        <input type="text" className="form-control Checkout_inline_2ndtag" id="exampleInputPassword1" placeholder="State,Province,region" />
-                                    </div>
-                                    <br></br>
-                                    <br></br>
-                                    <div className="Checkout_inline_tags">
-                                        <input type="text" className="form-control" id="exampleInputPassword1" placeholder="City" />
-                                        <input type="text" className="form-control Checkout_inline_2ndtag" id="exampleInputPassword1" placeholder="Zip Code" />
-                                    </div> */}
-
+                
                   <div className="row Checkout_lower">
                     <div className="col text-left">
                       <div className="billing_card_main_div">
@@ -93,7 +65,7 @@ export default function Checkout() {
                             className="form-check-label"
                             for="checkout1"
                           ></label>
-                          <img src="https://www.flaticon.com/svg/vstatic/svg/37/37186.svg?token=exp=1619174391~hmac=aa310642ef702d1f58159efd843220e9" />
+                          <img src="https://cryptologos.cc/logos/versions/bitcoin-btc-logo-full.svg?v=010" />
                         </div>
                         <div className="form-check mb-3 billing_card_div">
                           <input
