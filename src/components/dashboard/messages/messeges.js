@@ -1,6 +1,7 @@
 import React from 'react';
 import Halmet from "react-helmet";
 import "../../spaces.css";
+import Message_card from "./message_card";
 
 
 
@@ -81,7 +82,8 @@ function Dashboard_Messages() {
                     </select></div>
                   </div>
                 </div>
-                <div className="card border-light mb-3 py-3">
+                <Message_card/>
+                {/* <div className="card border-light mb-3 py-3">
                   <div className="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
                     <div className="col-auto col-lg-1 d-flex align-items-center px-0">
                       <div className="form-check inbox-check mr-2"><input className="form-check-input" type="checkbox" defaultValue id="defaultCheck1" /> <label className="form-check-label" htmlFor="defaultCheck1" /></div>
@@ -210,7 +212,7 @@ function Dashboard_Messages() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <nav aria-label="Page navigation example">
                   <ul className="pagination justify-content-center mt-5">
                     <li className="page-item"><a className="page-link" >Previous</a></li>

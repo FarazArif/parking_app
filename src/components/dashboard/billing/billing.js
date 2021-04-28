@@ -1,6 +1,9 @@
 import React from 'react';
 import Halmet from "react-helmet";
 import "../../spaces.css";
+import Billing_detail from "./billing_detail";
+import Crad_detail from "./card_detail";
+import Order_history from "./order_history";
 
 
 
@@ -90,7 +93,8 @@ function Billing() {
                           <a className="btn btn-sm btn-dark btn-primary" >Cancel subscription</a>
                         </div>
                       </div>
-                      <form action="#" method="post" className="card border-light p-3 mb-4">
+                      <Billing_detail/>
+                      {/* <form action="#" method="post" className="card border-light p-3 mb-4">
                         <div className="card-header border-light p-3 mb-4 mb-md-0">
                           <h3 className="h5 mb-0">Billing details</h3>
                         </div>
@@ -129,8 +133,11 @@ function Billing() {
                             <div className="col-12"><button className="btn btn-primary btn-dark mt-2 animate-up-2" type="submit">Update</button></div>
                           </div>
                         </div>
-                      </form>
-                      <form action="#" method="post" className="card border-light p-3 mb-4">
+                      </form> */}
+
+
+<Crad_detail/>
+                      {/* <form action="#" method="post" className="card border-light p-3 mb-4">
                         <div className="card-header border-light p-3 mb-4 mb-md-0">
                           <h3 className="h5 mb-0">Card details</h3>
                         </div>
@@ -163,7 +170,10 @@ function Billing() {
                             <div className="col-12"><button className="btn btn-primary btn-dark mt-2 animate-up-2" type="submit">Update</button></div>
                           </div>
                         </div>
-                      </form>
+                      </form> */}
+                      <Order_history/>
+{/*
+
                       <div className="card card-body bg-white border-light p-0 p-md-4">
                         <div className="card-header border-bottom p-3">
                           <h3 className="h5">Order History</h3>
@@ -200,11 +210,11 @@ function Billing() {
                               </div>
                             </li>
                           </ul>
-                               
+
                               </div>
                             </div>
                           </div>
-                          {/* <ul className="list-group">
+                          <ul className="list-group">
                             <li className="list-group-item border-bottom">
                               <div className="row align-items-center">
                                 <div className="col">
@@ -229,9 +239,9 @@ function Billing() {
                                 <div className="col-auto"><span className="badge badge-pill badge-success"><span className="text-uppercase font-weight-bold">Paid</span></span></div>
                               </div>
                             </li>
-                          </ul> */}
+                          </ul>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

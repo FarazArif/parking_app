@@ -1,5 +1,6 @@
 import React from "react"
 import "./adminpanel.css"
+import Logo from "./logo.png"
 
 
 export default function Admin_Panel(){
@@ -7,7 +8,7 @@ export default function Admin_Panel(){
         <div className="admin_most_main_div">
            <div className="wrapper">
   {/* Navbar */}
-  <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav className="main-header navbar navbar-expand navbar-white navbar-light admin_panel_nav_bar_main_div">
     {/* Left navbar links */}
     <ul className="navbar-nav">
       <li className="nav-item">
@@ -36,113 +37,145 @@ export default function Admin_Panel(){
   </nav>
   {/* /.navbar */}
   {/* Main Sidebar Container */}
-  <aside className="main-sidebar sidebar-dark-primary elevation-4">
-    {/* Brand Logo */}
-    <a href="" className="brand-link">
-      <img src="https://img.icons8.com/bubbles/50/000000/system-administrator-male.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
-      <span className="brand-text font-weight-light">Admin</span>
-    </a>
+  <aside className="main-sidebar sidebar-dark-primary elevation-4  aside_most_main_div">
+   
     {/* Sidebar */}
     <div className="sidebar">
       {/* Sidebar user panel (optional) */}
-      <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div className="image">
-          <img src="https://avatars2.githubusercontent.com/u/1122076?v=4" className="img-circle elevation-2" alt="User Image" />
+      <div className="user-panel mt-3 pb-3 mb-3 d-flex side_bar_logo__ain_div">
+        <div className="image side_logo_div">
+          <img src={Logo} className="" alt="User Image" />
         </div>
-        <div className="info">
-          <a href="" className="d-block">Alexander Pierce</a>
-        </div>
+      
       </div>
       {/* Sidebar Menu */}
       <nav className="mt-2">
         <ul className="nav nav-pills nav-sidebar flex-column side_bar_fist_div" data-widget="treeview" role="menu" data-accordion="false">
-          {/* Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library */}
-          <li className="nav-item has-treeview menu-open ">
-            <a href="" className="nav-link active">
-              <i className="nav-icon fas fa-tachometer-alt" />
-              <p>
-                Dashboard
-                {/* <i className="right fas fa-angle-left" /> */}
-              </p>
-            </a>
-           
-          </li>
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-                <span className="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-               
-              </p>
-            </a>
-          </li>
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-               
-              </p>
-            </a>
-          </li>
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-               
-              </p>
-            </a>
-          </li>
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-               
-              </p>
-            </a>
-          </li>
-          <li className="nav-header">EXAMPLES</li>
          
-          <li className="nav-item">
+          
+          <li className="nav-item side_bar_list_item_dashboard">
             <a href="" className="nav-link">
-              <i className="nav-icon far fa-image" />
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li className="nav-item ">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-th" />
-              <p>
-                Widgets
-                <span className="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
+            <i class='fas fa-desktop' style={{fontSize:"16px",color:"#5e72e4"}}></i>
+              <p className="side_bar_list_name">
+                Dashboard
              
-              <li className="nav-item">
-            <a href="" className="nav-link">
-            <i className="nav-icon fas fa-book" />
-              <p>
-                Pages
               </p>
             </a>
           </li>
-          <li className="nav-item has-treeview">
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class='fas fa-globe' style={{fontSize:"16px",color:"red"}}></i>
+              <p className="side_bar_list_name">
+                Icon
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class=' fa fa-map-marker' style={{fontSize:"16px",color:"#5e72e4"}}></i>
+              <p className="side_bar_list_name">
+                Google
+             
+              </p>
+            </a>
+          </li>
+
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class=' fas fa-user-alt' style={{fontSize:"16px",color:"rgb(248, 248, 77)"}}></i>
+              <p className="side_bar_list_name">
+                Profile
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class=' fa fa-bars' style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Tables
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fa fa-key icon" style={{fontSize:"16px",color:"red"}}></i>
+              <p className="side_bar_list_name">
+                Login
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class=' far fa-user-circle' style={{fontSize:"16px",color:"#5e72e4"}}></i>
+              <p className="side_bar_list_name">
+                Register
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fas fa-location-arrow" style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Upgrade
+             
+              </p>
+            </a>
+          </li>
+         
+            <hr className="sidebar_underline"></hr>
+
+
+          
+         
+         
+         
+          <li className="nav-header sidebar_documentation_list">Documentation</li>
+         
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fas fa-location-arrow" style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Upgrade
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fas fa-location-arrow" style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Upgrade
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fas fa-location-arrow" style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Upgrade
+             
+              </p>
+            </a>
+          </li>
+          <li className="nav-item side_bar_list_item">
+            <a href="" className="nav-link">
+            <i class="fas fa-location-arrow" style={{fontSize:"16px",color:"black"}}></i>
+              <p className="side_bar_list_name">
+                Upgrade
+             
+              </p>
+            </a>
+          </li>
+         
+             
+            
+          {/* <li className="nav-item has-treeview">
             <a href="" className="nav-link">
               <i className="nav-icon far fa-plus-square" />
               <p>
@@ -157,81 +190,11 @@ export default function Admin_Panel(){
                   <p>Login</p>
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Register</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Forgot Password</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Recover Password</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Lockscreen</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Legacy User Menu</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Language Menu</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Pace</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Starter Page</p>
-                </a>
-              </li>
+            
             </ul>
-          </li>
-          <li className="nav-header">MISCELLANEOUS</li>
-          <li className="nav-item">
-            <a href="" className="nav-link">
-              <i className="nav-icon fas fa-file" />
-              <p>Documentation</p>
-            </a>
-          </li>
+          </li> */}
+
+        
        
         </ul>
       </nav>
@@ -242,7 +205,7 @@ export default function Admin_Panel(){
   {/* Content Wrapper. Contains page content */}
   <div className="content-wrapper">
     {/* Content Header (Page header) */}
-    <div className="content-header">
+    <div className="content-header body_header_main_div">
       <div className="container-fluid">
         <div className="row mb-2">
           <div className="col-sm-6">
@@ -261,12 +224,12 @@ export default function Admin_Panel(){
     </div>
     {/* /.content-header */}
     {/* Main content */}
-    <section className="content">
-      <div className="container-fluid">
+    <section className="content body_info_chart_main_div">
+      <div className="container-fluid body_info_box_most_main_div">
         {/* Info boxes */}
-        <div className="row">
-          <div className="col-12 col-sm-6 col-md-3">
-            <div className="info-box">
+        <div className="row body_info_box_main_div">
+          <div className="col-12 col-sm-6 col-md-3 ">
+            {/* <div className="info-box">
               <span className="info-box-icon bg-info elevation-1"><i className="fas fa-cog" /></span>
               <div className="info-box-content">
                 <span className="info-box-text">CPU Traffic</span>
@@ -275,54 +238,110 @@ export default function Admin_Panel(){
                   <small>%</small>
                 </span>
               </div>
-              {/* /.info-box-content */}
-            </div>
+              
+            </div> */}
+                   <div class="card-body body_info_card">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total traffic</h5>
+                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                      <i className="fas fa-cog" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+
+
+
             {/* /.info-box */}
           </div>
           {/* /.col */}
           <div className="col-12 col-sm-6 col-md-3">
-            <div className="info-box mb-3">
-              <span className="info-box-icon bg-danger elevation-1"><i className="fas fa-thumbs-up" /></span>
-              <div className="info-box-content">
-                <span className="info-box-text">Likes</span>
-                <span className="info-box-number">41,410</span>
-              </div>
-              {/* /.info-box-content */}
-            </div>
-            {/* /.info-box */}
+                       <div class="card-body body_info_card">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
+                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                      <i className="fas fa-thumbs-up" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-success mr-2"><i className="fas fa-thumbs-up" /> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
           </div>
           {/* /.col */}
           {/* fix for small devices only */}
           <div className="clearfix hidden-md-up" />
-          <div className="col-12 col-sm-6 col-md-3">
-            <div className="info-box mb-3">
-              <span className="info-box-icon bg-success elevation-1"><i className="fas fa-shopping-cart" /></span>
-              <div className="info-box-content">
-                <span className="info-box-text">Sales</span>
-                <span className="info-box-number">760</span>
-              </div>
-              {/* /.info-box-content */}
-            </div>
-            {/* /.info-box */}
+            <div className="col-12 col-sm-6 col-md-3">
+           
+
+            <div class="card-body body_info_card">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                      <br></br>
+                      <span class="h2 font-weight-bold mb-0">924</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                      <i className="fas fa-shopping-cart" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
           </div>
           {/* /.col */}
           <div className="col-12 col-sm-6 col-md-3">
-            <div className="info-box mb-3">
-              <span className="info-box-icon bg-warning elevation-1"><i className="fas fa-users" /></span>
-              <div className="info-box-content">
-                <span className="info-box-text">New Members</span>
-                <span className="info-box-number">2,000</span>
-              </div>
-              {/* /.info-box-content */}
-            </div>
-            {/* /.info-box */}
+           
+
+
+            <div class="card-body body_info_card">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                      <span class="h2 font-weight-bold mb-0">49,65%</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+                      <i className="fas fa-users" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+
+
+
+
+
+
           </div>
           {/* /.col */}
         </div>
         {/* /.row */}
         <div className="row">
           <div className="col-md-12">
-            <div className="card">
+            <div className="card chart_main_div">
               <div className="card-header">
                 <h5 className="card-title">Monthly Recap Report</h5>
                 <div className="card-tools">

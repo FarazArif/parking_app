@@ -29,13 +29,14 @@ app.get("/",(req,res)=>{
 
 app.post("/checkout",(req,res)=>{
    console.log("request a gai");
-    res.send("This work")
+    res.send("This ")
 })
 
 
 
 
 app.use(express.static('./build'));
+
 app.listen(8080, function () {
     console.log("Start starting");
 })

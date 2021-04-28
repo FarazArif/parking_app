@@ -1,0 +1,29 @@
+.admin_panel_nav{
+    padding: 0px !important;
+}
+.adminpanel_header_icon{
+    font-size: 1.3rem !important;
+}
+.admin_panel_drop_down_nav{
+    right: 0px !important;
+    left: auto !important;
+}
+.admin_panel_most_main_div{
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 991.98px){
+.admin_panel_navbar-collapse{
+    /* width: calc(100% - 30px); */
+    position: inherit !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0 !important;
+    z-index: 0 !important;
+     overflow-y: inherit  !important;
+     opacity: 1 !important;
+     height: fit-content !important;
+   justify-content: center;
+   align-items: center;
+}
+}

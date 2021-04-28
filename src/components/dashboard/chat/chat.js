@@ -1,25 +1,27 @@
-import React from 'react';
+import React from "react";
 import Halmet from "react-helmet";
 import "../../spaces.css";
-
-
+import Chat_item_card from "./chat_item_card";
+import Chat_message_card from "./chat_message_card";
+import Chat_answer_card from "./chat_answer_card";
+import Dashboard_side_card from "./dashboard_side_card";
 
 function Chat() {
-    return (
-      <div >
-  <Halmet>
+  return (
+    <div>
+      <Halmet>
         <script>
-      {`
+          {`
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
       gtag('config', 'UA-141734189-6');
       `}
-    </script>
+        </script>
 
-    <script>
-      {`
+        <script>
+          {`
     (function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({
           'gtm.start':
@@ -29,49 +31,141 @@ function Chat() {
             '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-THQTXJ7');
       `}
-    </script>
+        </script>
 
-    <script>
-      {`
+        <script>
+          {`
      type="text/javascript">(function () { window['__CF$cv$params'] = { r: '63f4d4b98aca5601', m: '31012c0bf3fabcb2e5cc136e852f9c26d72d664a-1618318340-1800-AV5ReoiFdNekdpQaP5kPoKKM+DtsNHvWcoz6wW7VMD75cU26gB6NSuuTMeR5y3BTyi7Ztj4+atwlQ42T2NCSbYvV/v50Ny+SOwz+SDAl8mOQqMvwEz6nEzqkB9YILUVVKiTQKezaXpvuGpjDupp89+3+218qDMIPOM2ll8YNwjf6', s: [0x2525da087b, 0x794c6870bc], } })();
     `}
-    </script>
-
-        </Halmet>
-        <main>
-  {/* <div className="preloader bg-dark flex-column justify-content-center align-items-center">
+        </script>
+      </Halmet>
+      <main>
+        {/* <div className="preloader bg-dark flex-column justify-content-center align-items-center">
     <div className="position-relative"><img src="https://demo.themesberg.com/spaces/assets/img/brand/light-without-letter.svg" alt="Logo loader" /> <img src="https://demo.themesberg.com/spaces/assets/img/brand/letter.svg" className="rotate-letter" alt="Letter loader" /></div>
   </div> */}
-  <div className="section section-lg bg-soft">
-    <div className="container">
-      <div className="row pt-5 pt-md-0">
-        <div className="col-12 col-md-4 d-none d-lg-block">
-          <div className="card border-light p-2">
-            <div className="card-body p-2">
-              <div className="profile-thumbnail small-thumbnail mx-auto"><img src="../../assets/img/team/profile-picture-4.jpg" className="card-img-top rounded-circle border-white" alt="Joseph Portrait" /></div>
-              <h2 className="h5 font-weight-normal text-center mt-3 mb-0">Neil Sims</h2>
-              <div className="list-group dashboard-menu list-group-sm mt-4"><a   className="d-flex list-group-item list-group-item-action">Overview <span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">Settings<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">My Items<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a  className="d-flex list-group-item list-group-item-action">Security<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action">Billing<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span> </a><a   className="d-flex list-group-item list-group-item-action active border-0">Messages<span className="icon icon-xs ml-auto"><span className="fas fa-chevron-right" /></span></a></div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 d-lg-none">
-          <div className="card bg-white border-light mb-4 mb-lg-5">
-            <div className="card-body">
-              <div className="row align-items-center">
-                <div className="col-10 d-flex"><a   className="list-group-item list-group-item-action border-0">Overview</a> <a   className="list-group-item list-group-item-action border-0">Settings</a> <a   className="list-group-item list-group-item-action d-none d-sm-block border-0">My Items</a> <a  className="list-group-item list-group-item-action d-none d-md-block border-0">Security</a></div>
-                <div className="col-2 d-flex justify-content-center">
-                  <div className="btn-group dropleft"><button className="btn btn-link dropdown-toggle dropdown-toggle-split mr-2 m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span className="icon icon-sm"><span className="fas fa-ellipsis-h icon-secondary fa-lg" /> </span><span className="sr-only">Toggle
-                        Dropdown</span></button>
-                    <div className="dropdown-menu"><a   className="list-group-item list-group-item-action d-sm-none border-0">My Items</a> <a  className="list-group-item list-group-item-action d-md-none border-0">Security</a> <a   className="list-group-item list-group-item-action border-0">Billing</a> <a   className="list-group-item list-group-item-action border-0 active">Messages</a></div>
+        <div className="section section-lg bg-soft">
+          <div className="container">
+            <div className="row pt-5 pt-md-0">
+<Dashboard_side_card/>
+              {/* <div className="col-12 col-md-4 d-none d-lg-block">
+                <div className="card border-light p-2">
+                  <div className="card-body p-2">
+                    <div className="profile-thumbnail small-thumbnail mx-auto">
+                      <img
+                        src="../../assets/img/team/profile-picture-4.jpg"
+                        className="card-img-top rounded-circle border-white"
+                        alt="Joseph Portrait"
+                      />
+                    </div>
+                    <h2 className="h5 font-weight-normal text-center mt-3 mb-0">
+                      Neil Sims
+                    </h2>
+                    <div className="list-group dashboard-menu list-group-sm mt-4">
+                      <a className="d-flex list-group-item list-group-item-action">
+                        Overview{" "}
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>{" "}
+                      </a>
+                      <a className="d-flex list-group-item list-group-item-action">
+                        Settings
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>{" "}
+                      </a>
+                      <a className="d-flex list-group-item list-group-item-action">
+                        My Items
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>{" "}
+                      </a>
+                      <a className="d-flex list-group-item list-group-item-action">
+                        Security
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>{" "}
+                      </a>
+                      <a className="d-flex list-group-item list-group-item-action">
+                        Billing
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>{" "}
+                      </a>
+                      <a className="d-flex list-group-item list-group-item-action active border-0">
+                        Messages
+                        <span className="icon icon-xs ml-auto">
+                          <span className="fas fa-chevron-right" />
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-lg-8">
-          <div className="text-left mb-3"><a  ><span className="icon icon-xs"><span className="fas fa-chevron-left mr-2" /></span> Back to all messages</a></div>
-          <div className="card bg-soft-green border-light mb-4">
+              <div className="col-12 d-lg-none">
+                <div className="card bg-white border-light mb-4 mb-lg-5">
+                  <div className="card-body">
+                    <div className="row align-items-center">
+                      <div className="col-10 d-flex">
+                        <a className="list-group-item list-group-item-action border-0">
+                          Overview
+                        </a>{" "}
+                        <a className="list-group-item list-group-item-action border-0">
+                          Settings
+                        </a>{" "}
+                        <a className="list-group-item list-group-item-action d-none d-sm-block border-0">
+                          My Items
+                        </a>{" "}
+                        <a className="list-group-item list-group-item-action d-none d-md-block border-0">
+                          Security
+                        </a>
+                      </div>
+                      <div className="col-2 d-flex justify-content-center">
+                        <div className="btn-group dropleft">
+                          <button
+                            className="btn btn-link dropdown-toggle dropdown-toggle-split mr-2 m-0 p-0"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span className="icon icon-sm">
+                              <span className="fas fa-ellipsis-h icon-secondary fa-lg" />{" "}
+                            </span>
+                            <span className="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div className="dropdown-menu">
+                            <a className="list-group-item list-group-item-action d-sm-none border-0">
+                              My Items
+                            </a>{" "}
+                            <a className="list-group-item list-group-item-action d-md-none border-0">
+                              Security
+                            </a>{" "}
+                            <a className="list-group-item list-group-item-action border-0">
+                              Billing
+                            </a>{" "}
+                            <a className="list-group-item list-group-item-action border-0 active">
+                              Messages
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+              <div className="col-12 col-lg-8">
+                <div className="text-left mb-3">
+                  <a>
+                    <span className="icon icon-xs">
+                      <span className="fas fa-chevron-left mr-2" />
+                    </span>{" "}
+                    Back to all messages
+                  </a>
+                </div>
+                <Chat_item_card />
+                <Chat_message_card />
+                <Chat_answer_card />
+                <Chat_message_card />
+                {/* <div className="card bg-soft-green border-light mb-4">
             <div className="row no-gutters align-items-center">
               <div className="col-12 col-lg-4 col-xl-4"><a  ><img src="../../assets/img/private-office.jpg" alt="private office" className="card-img p-2 rounded-xl" /></a></div>
               <div className="col-12 col-lg-7 col-xl-8">
@@ -111,33 +205,51 @@ function Chat() {
             </div>
             <p className="m-0">Hi Chris! Thanks a lot for this very useful template. Saved me a lot of time and searches
               on the internet.</p>
-          </div>
-          <form action="#" className="mt-4"><textarea className="form-control border border-light-gray mb-4" id="message" placeholder="Your Message" rows={6} maxLength={1000} required defaultValue={""} />
-            <div className="d-flex justify-content-between align-items-center mt-3">
-              <div className="file-field">
-                <div className="d-flex justify-content-center">
-                  <div className="d-flex"><span className="icon icon-md h6"><span className="fas fa-paperclip mr-3" /></span>
-                    <input type="file" />
-                    <div className="d-md-block text-left d-none d-sm-block">
-                      <div className="font-weight-normal text-dark mb-1">Add File</div>
-                      <div className="text-gray small pr-3 pr-md-11">Supported files are: jpg, jpeg, png, doc, pdf, gif,
-                        zip, rare, tar, txt, xls, docx, xlsx, odt</div>
+          </div> */}
+                <form action="#" className="mt-4">
+                  <textarea
+                    className="form-control border border-light-gray mb-4"
+                    id="message"
+                    placeholder="Your Message"
+                    rows={6}
+                    maxLength={1000}
+                    required
+                    defaultValue={""}
+                  />
+                  <div className="d-flex justify-content-between align-items-center mt-3">
+                    <div className="file-field">
+                      <div className="d-flex justify-content-center">
+                        <div className="d-flex">
+                          <span className="icon icon-md h6">
+                            <span className="fas fa-paperclip mr-3" />
+                          </span>
+                          <input type="file" />
+                          <div className="d-md-block text-left d-none d-sm-block">
+                            <div className="font-weight-normal text-dark mb-1">
+                              Add File
+                            </div>
+                            <div className="text-gray small pr-3 pr-md-11">
+                              Supported files are: jpg, jpeg, png, doc, pdf,
+                              gif, zip, rare, tar, txt, xls, docx, xlsx, odt
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button type="submit" className="btn btn-dark">
+                        Send
+                      </button>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
-              <div><button type="submit" className="btn btn-dark">Send</button></div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </main>
     </div>
-  </div>
-</main>
+  );
+}
 
-
-      </div>
-    );
-  }
-
-  export default Chat;
+export default Chat;

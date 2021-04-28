@@ -104,11 +104,11 @@ export default function Checkout() {
                                              </label>
                                     </div>
                                 </form>
-                                     <a href="/checkout_billing"> 
+                                     {/* <a href="/checkout_billing">  */}
                                     <button 
-                                    // onClick={SenRequest}
+                                     onClick={SenRequest}
                                     className="btn checkout_button">Continue</button>
-                                     </a> 
+                                     {/* </a>  */}
                             </div>
                         </div>
                         <div className="col-md-4">
